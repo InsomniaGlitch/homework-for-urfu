@@ -1,0 +1,56 @@
+plugins {
+    id 'java'
+}
+
+group = 'ru.urfu' // And what else, really?
+version = '1.5.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['hw1', 'hw2']
+            include '**/*.java'
+            exclude 'hw2/task4.java'
+        }
+    }
+    test {
+        java {
+            srcDirs = ['hw1']
+            include '**/*Test.java'
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+tasks.register('runHw1Task2Test', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'hw1.task2Test'
+}
+
+tasks.register('runHw1Task3Test', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'hw1.task3Test'
+}
+
+tasks.register('verifyHomework') {
+    dependsOn tasks.named('runHw1Task2Test'), tasks.named('runHw1Task3Test')
+}
+
+tasks.named('test') {
+    enabled = false
+}

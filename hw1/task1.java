@@ -1,3 +1,4 @@
+package hw1;
 public class task1 {
     double g = 32.32574209047386987;
     String word = "3990.6522585049364604";

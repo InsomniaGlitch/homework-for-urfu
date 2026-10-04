@@ -1,2 +1,11 @@
-To perform the testing, run:\
-```javac task2.java task2Test.java task3.java task3Test.java ; java task2Test ; java task3Test```
+To run the hw tests:
+```bash
+./gradlew verifyHomework
+```
+
+On Windows:
+```powershell
+./gradlew.bat verifyHomework
+```
+
+The 2nd HW is not complete as of yet!

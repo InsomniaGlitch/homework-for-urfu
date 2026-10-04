@@ -1,3 +1,4 @@
+package hw1;
 public class task3Test {
     public static void main(String[] args) throws Exception {
         task3 t = new task3();

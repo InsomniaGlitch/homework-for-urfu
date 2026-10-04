@@ -1,3 +1,4 @@
+package hw1;
 public class task2Test {
     public static void main(String[] args) {
         task2 t = new task2();

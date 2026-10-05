@@ -20,7 +20,6 @@ sourceSets {
         java {
             srcDirs = ['hw1', 'hw2']
             include '**/*.java'
-            exclude 'hw2/task4.java'
         }
     }
     test {

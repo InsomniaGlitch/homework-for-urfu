@@ -98,10 +98,6 @@ public class task4 {
             sumX += dx * dx;
             sumY += dy * dy;
         }
-        if(sumX != 0 && sumY != 0) {
-            return numerator / Math.sqrt(sumX * sumY);
-        } else {
-            return Double.NaN;
-        }
+        return (sumX != 0 && sumY != 0) ? numerator / Math.sqrt(sumX * sumY) : Double.NaN;
     }
 }

@@ -18,7 +18,7 @@ repositories {
 sourceSets {
     main {
         java {
-            srcDirs = ['hw1', 'hw2']
+            srcDirs = ['hw1', 'hw2', 'hw3']
             include '**/*.java'
         }
     }

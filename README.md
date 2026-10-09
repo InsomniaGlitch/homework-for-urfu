@@ -7,5 +7,3 @@ On Windows:
 ```powershell
 ./gradlew.bat verifyHomework
 ```
-
-The 2nd HW is not complete as of yet!

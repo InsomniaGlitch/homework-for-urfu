@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group = 'ru.urfu' // And what else, really?
+group = 'ru.urfu'
 version = '1.5.0'
 
 java {

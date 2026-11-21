@@ -4,9 +4,9 @@ public class task2Test {
         task2 t = new task2();
         double x = 0.0;
         double expected = Math.PI / 2;
-        double real = t.calculateShit(x);
+        double real = t.calculate(x);
         if (Math.abs(real - expected) > 1e-9) {
-            throw new AssertionError("calculateShit(0.0) should be pi/2, not " + real);
+            throw new AssertionError("calculate(0.0) should be pi/2, not " + real);
         }
         System.out.println("task2 test passed");
     }
